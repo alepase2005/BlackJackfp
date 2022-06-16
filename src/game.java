@@ -24,6 +24,7 @@ public class game extends javax.swing.JFrame {
      */
     public game() {
         initComponents();
+        //deck of cards
         deck2[0]=false;
         deck2[1]=false;
         deck2[2]=false;
@@ -348,13 +349,15 @@ public class game extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void drawbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_drawbtnActionPerformed
-
+        //chooses a card
         int ncard=(int)(Math.random()*51);
+        //if the card is already taken chooses another one
         while(deck2[ncard]){
         ncard=(int)(Math.random()*51);
         }
         deck2[ncard]=true;
         cartn++;
+        //displays cards
         if(cartn==1){
         cardpim3lbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/"+deck[ncard].getFamily()+"/"+deck[ncard].getRole()+".png")));
         }
@@ -370,6 +373,7 @@ public class game extends javax.swing.JFrame {
         pcardnlbl.setText(""+deck[ncard]);
         
         ndrawp++;
+        //terms of victory
         if (totp==21){
          drawbtn.setEnabled(false);
          standbtn.setEnabled(false);
@@ -392,6 +396,7 @@ public class game extends javax.swing.JFrame {
     }//GEN-LAST:event_drawbtnActionPerformed
 
     private void resetbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetbtnActionPerformed
+   //resets values and images
    totp=0;
    totd=0;
    cont=0;
@@ -418,12 +423,14 @@ public class game extends javax.swing.JFrame {
    cardd5lbl.setIcon(null);
    cartn=0;
    cartnd=0;
+   //puts the card back in the deck
    for(int i=0;i<=51;i++){
    deck2[i]=false;    
     }//GEN-LAST:event_resetbtnActionPerformed
 }
     private void startbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startbtnActionPerformed
-      int ncard1=(int)(Math.random()*51);
+        //deals the first two cards to the player and the dealer
+        int ncard1=(int)(Math.random()*51);
         while(deck2[ncard1]){
         ncard1=(int)(Math.random()*51);
         }
@@ -468,6 +475,7 @@ public class game extends javax.swing.JFrame {
     }//GEN-LAST:event_startbtnActionPerformed
 
     private void standbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_standbtnActionPerformed
+        //shows the second card of the dealer and confronts the totals
         if(cont==0){
         drawbtn.setEnabled(false);
         dealertotnlbl.setText(""+totd);
@@ -476,6 +484,7 @@ public class game extends javax.swing.JFrame {
         cont++;
         }
         else if(cont==1){
+        //makes the dealer move
         if(totd<17){
         int ncardd=(int)(Math.random()*51);
         while(deck2[ncardd]){
@@ -485,6 +494,7 @@ public class game extends javax.swing.JFrame {
         int vcardd=deck[ncardd].getValue();
         totd=totd+vcardd;
         cartnd++;
+        //displays dealer's cards
          if(cartnd==1){
         cardd3lbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/"+deck[ncardd].getFamily()+"/"+deck[ncardd].getRole()+".png")));
         }
@@ -498,6 +508,7 @@ public class game extends javax.swing.JFrame {
         dealertotnlbl.setText(""+totd);
         dcardnlbl.setText(""+deck[ncardd]);
         ndrawd++;
+        //terms of victory
         if(ndrawd==5&&totd<=21){
            lostlbl.setText("You have lost!");  
         }
