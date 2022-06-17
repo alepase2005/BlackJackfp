@@ -172,7 +172,7 @@ public class game extends javax.swing.JFrame {
         gamepnl.setBackground(new java.awt.Color(0, 102, 51));
 
         dealertotlbl.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        dealertotlbl.setText("dealer total:");
+        dealertotlbl.setText("dealer's total:");
 
         dealertotnlbl.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
 
