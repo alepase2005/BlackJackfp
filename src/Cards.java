@@ -23,12 +23,15 @@ public class Cards {
       family=f;
       role=r;
     }
+    //returns value of the card
     public int getValue(){
         return value;
     }
+    //returns suit of the card
      public String getFamily(){
         return family;
     }
+    //returns role of the card
      public String getRole(){
         return role;
     }
