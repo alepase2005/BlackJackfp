@@ -90,7 +90,7 @@ public class game extends javax.swing.JFrame {
         deck[9]=new Cards(10,"hearts");
         deck[10]=new Cards(10,"hearts","jack");
         deck[11]=new Cards(10,"hearts","queen");
-        deck[12]=new Cards(10,"hearts","queen");
+        deck[12]=new Cards(10,"hearts","king");
         deck[13]=new Cards(1,"clubs","ace");
         deck[14]=new Cards(2,"clubs");
         deck[15]=new Cards(3,"clubs");
@@ -103,7 +103,7 @@ public class game extends javax.swing.JFrame {
         deck[22]=new Cards(10,"clubs");
         deck[23]=new Cards(10,"clubs","jack");
         deck[24]=new Cards(10,"clubs","queen");
-        deck[25]=new Cards(10,"clubs","queen");
+        deck[25]=new Cards(10,"clubs","king");
         deck[26]=new Cards(1,"spades","ace");
         deck[27]=new Cards(2,"spades");
         deck[28]=new Cards(3,"spades");
@@ -116,7 +116,7 @@ public class game extends javax.swing.JFrame {
         deck[35]=new Cards(10,"spades");
         deck[36]=new Cards(10,"spades","jack");
         deck[37]=new Cards(10,"spades","queen");
-        deck[38]=new Cards(10,"spades","queen");
+        deck[38]=new Cards(10,"spades","king");
         deck[39]=new Cards(1,"diamonds","ace");
         deck[40]=new Cards(2,"diamonds");
         deck[41]=new Cards(3,"diamonds");
@@ -129,7 +129,7 @@ public class game extends javax.swing.JFrame {
         deck[48]=new Cards(10,"diamonds");
         deck[49]=new Cards(10,"diamonds","jack");
         deck[50]=new Cards(10,"diamonds","queen");
-        deck[51]=new Cards(10,"diamonds","queen");
+        deck[51]=new Cards(10,"diamonds","king");
     }
 
     /**
