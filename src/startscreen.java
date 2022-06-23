@@ -56,36 +56,37 @@ public class startscreen extends javax.swing.JFrame {
 
         lin3lbl.setText("To make the dealer progress in their turn press the stand button");
 
-        cardlbl.setIcon(new javax.swing.ImageIcon("C:\\Users\\alpas1720\\Pictures\\card1.jpg")); // NOI18N
+        cardlbl.setIcon(new javax.swing.ImageIcon("C:\\Users\\Alessandro\\OneDrive\\Desktop\\big-chungus2.png")); // NOI18N
         cardlbl.setToolTipText("");
 
         javax.swing.GroupLayout startpnlLayout = new javax.swing.GroupLayout(startpnl);
         startpnl.setLayout(startpnlLayout);
         startpnlLayout.setHorizontalGroup(
             startpnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(startpnlLayout.createSequentialGroup()
-                .addGroup(startpnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(startpnlLayout.createSequentialGroup()
-                        .addGap(288, 288, 288)
-                        .addComponent(startbtn))
-                    .addGroup(startpnlLayout.createSequentialGroup()
-                        .addGap(268, 268, 268)
-                        .addComponent(titlelbl, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(startpnlLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lin1lbl))
-                    .addGroup(startpnlLayout.createSequentialGroup()
-                        .addGap(236, 236, 236)
-                        .addComponent(cardlbl)))
-                .addContainerGap(20, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, startpnlLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(startpnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lin2lbl, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(startpnlLayout.createSequentialGroup()
-                        .addGap(45, 45, 45)
-                        .addComponent(lin3lbl, javax.swing.GroupLayout.PREFERRED_SIZE, 402, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(69, 69, 69))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, startpnlLayout.createSequentialGroup()
+                        .addComponent(cardlbl)
+                        .addGap(219, 219, 219))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, startpnlLayout.createSequentialGroup()
+                        .addComponent(startbtn)
+                        .addGap(334, 334, 334))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, startpnlLayout.createSequentialGroup()
+                .addContainerGap(47, Short.MAX_VALUE)
+                .addGroup(startpnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, startpnlLayout.createSequentialGroup()
+                        .addComponent(lin1lbl)
+                        .addGap(53, 53, 53))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, startpnlLayout.createSequentialGroup()
+                        .addComponent(titlelbl, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(228, 228, 228))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, startpnlLayout.createSequentialGroup()
+                        .addComponent(lin3lbl, javax.swing.GroupLayout.PREFERRED_SIZE, 402, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(139, 139, 139))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, startpnlLayout.createSequentialGroup()
+                        .addComponent(lin2lbl, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(105, 105, 105))))
         );
         startpnlLayout.setVerticalGroup(
             startpnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -96,13 +97,13 @@ public class startscreen extends javax.swing.JFrame {
                 .addComponent(lin1lbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lin2lbl, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lin3lbl)
                 .addGap(13, 13, 13)
-                .addComponent(cardlbl, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
+                .addComponent(cardlbl, javax.swing.GroupLayout.PREFERRED_SIZE, 277, Short.MAX_VALUE)
+                .addGap(13, 13, 13)
                 .addComponent(startbtn)
-                .addContainerGap(35, Short.MAX_VALUE))
+                .addGap(83, 83, 83))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -113,7 +114,9 @@ public class startscreen extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(startpnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(startpnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
